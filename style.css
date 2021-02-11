@@ -48,8 +48,18 @@ a{
 }
 
 ul{
-  list-style: none;
   padding-left: 0;
+}
+
+li{
+  list-style: none;
+}
+
+button{
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 /* Typography */
 
@@ -99,6 +109,7 @@ p {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
+
 .navbar__menu__item{
   padding: 8px 12px;
   margin: 0 4px;
@@ -113,4 +124,33 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-grey);
+}
+
+/* Home */
+#home { 
+  background:url("imgs/homebackground.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center
+}
+
+.home__avatar{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description{
+  color: var(--color-white);
+}
+
+.home__contact{
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
