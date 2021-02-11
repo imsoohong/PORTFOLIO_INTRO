@@ -18,7 +18,7 @@
   <!-- css -->
   <link rel="stylesheet" href="style.css">
   <!-- js -->
-  <script src="main.js" defer></script> 
+  <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -39,53 +39,90 @@
   </nav>
   <!-- Home -->
   <section id="home">
-    <img src="imgs/profile.png" alt="임수홍의 사진" class="home__avatar">
-    <h1 class="home__title">안녕하세요, <br>저는 임수홍입니다</h1>
-    <h2 class="home__description">디자인의 감각이 넘치는 신입 프론트엔드 개발자입니다.</h2>
-    <button class="home__contact">연락주세요</button>
+    <div class="home__container">
+      <img
+        src="imgs/people1-200515-154332.jpg"
+        alt="Ellie's profile photo"
+        class="home__avatar"/> 
+      <h1 class="home__title">안녕하세요, <br />저는 임수홍입니다</h1>
+      <h2 class="home__description">
+       신입 프론드엔드 개발자를 희망하고 있습니다
+      </h2>
+      <button class="home__contact">연락</button>
+    </div>
   </section>
+
   <!-- About -->
-  <section id="about">
+  <section id="about" class="section section__container">
     <h1>About me</h1>
-    <p>지금은 HTML와 CSS에 대해 공부하고 있는 신입 프론트개발자를 희망하고 있지만 앞으로는 더 좋은 실력을 위해 노력할 임수홍입니다.</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure possimus
+      rem sequi? Nihil, est impedit dignissimos consequatur totam, odit
+      deserunt doloremque laudantium similique corrupti, iusto optio rerum in
+      deleniti officia.
+    </p>
     <div class="about__majors">
-      <div class="mjor">
+      <div class="major">
         <div class="major__icon">
           <i class="fab fa-html5"></i>
         </div>
-        <div class="major__title">프론트엔드</div>
-        <div class="major__description">HTML를 할 줄압니다</div>
+        <h2 class="major__title">Front-end</h2>
+        <div class="major__description">
+          HTML, CSS, JavaScript, TypeScript,
+          <br />React, Vue, Web APIs
+        </div>
       </div>
-      <div class="mjor">
+      <div class="major">
         <div class="major__icon">
-          <i class="fab fa-html5"></i>
+          <i class="fas fa-mobile"></i>
         </div>
-        <div class="major__title">프론트엔드</div>
-        <div class="major__description">HTML를 할 줄압니다</div>
+        <h2 class="major__title">Mobile</h2>
+        <p class="major__description">
+          Android, iOS, React Native, Flutter,
+          <br />Java, Swift, Kotlin
+        </p>
       </div>
-      <div class="mjor">
+      <div class="major">
         <div class="major__icon">
-          <i class="fab fa-html5"></i>
+          <i class="fas fa-server"></i>
         </div>
-        <div class="major__title">프론트엔드</div>
-        <div class="major__description">HTML를 할 줄압니다</div>
+        <h2 class="major__title">Back-end</h2>
+        <p class="major__description">
+          Java, JavaScript, Go, NodeJS,
+          <br />Rest APIs, GraphGL
+        </p>
       </div>
-      <div class="about__jobs">
-        <div class="job">
-          <img src="/imgs/jobs/profile.png" alt="apple" class="job__logo">
-          <p class="job__name"></p>
-          <p class="job__period"></p>
-        </div>
-        <div class="job">
-          <img src="/imgs/jobs/profile.png" alt="apple" class="job__logo">
-          <p class="job__name"></p>
-          <p class="job__period"></p>
-        </div>
+    </div>
+    <div class="about__jobs">
+      <div class="job">
+        <img
+          src="imgs/logo-samsung.png"
+          alt="samsung"
+          class="job__logo"
+        />
+       <div class="job__description">
+        <p class="job__name">
+          Currently working at Samsung as Software Engineer
+        </p>
+        <p class="job__period">2019 Sept - Until now</p>
+       </div>
       </div>
+      <div class="job">
+        <img
+          src="imgs/logo-samsung.png"
+          alt="samsung"
+          class="job__logo"
+        />
+        <div class="job__description">
+          <p class="job__name">
+            Currently working at Samsung as Software Engineer
+          </p>
+          <p class="job__period">2019 Sept - Until now</p>
+         </div>
     </div>
   </section>
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h1>Skills</h1>
     <h2>Skills & Attribute</h2>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt sapiente numquam nostrum aut a porro possimus qui
@@ -140,7 +177,7 @@
     </div>
   </section>
   <!-- Work -->
-  <section id="work">
+  <section id="work" class="section">
     <h1>My Work</h1>
     <h3>Projects</h3>
     <div class="work__categories">
@@ -245,7 +282,7 @@
     </div>
   </section>
   <!-- contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h1 class="contct__title">Let's talk</h1>
     <h2 class="contact__email">임수홍의 이메일</h2>
     <div class="contact__links">
