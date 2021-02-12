@@ -31,7 +31,6 @@
 /* Size */
 --size-border-radius : 4px;
 
-
 /* Animation */
 --animation__duration: 300ms;
 }
@@ -134,7 +133,7 @@ p {
 #home { 
   background:url("imgs/homebackground.png") center/cover no-repeat;
   padding: 40px;
-  text-align: center
+  text-align: center;
 }
 
 .home__avatar{
@@ -415,4 +414,28 @@ p {
 
 .testimonial__speech-bubble a {
   color: black;
+}
+
+/* Contact */
+#contact{
+  background-color: var(--color-black);
+}
+.contact__title, .contact__email, .contact__rights{
+  color: var(--color-white);
+}
+
+.contact__title{
+  margin: 32px 0;
+}
+
+.contact__links{
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+.contact__links i {
+  transition: all var(--animation__duration) ease-in;
+}
+.contact__links i:hover{
+  transform: scale(1.1);
+  color: var(--color-light-grey);
 }
