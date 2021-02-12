@@ -242,7 +242,7 @@ p {
   display: flex;
   background-color: var(--color-light-grey);
   color: var(--color-light-white);
-  margin: 20px 0p;
+  margin: 20px 0;
 }
 
 .skillset__title{
