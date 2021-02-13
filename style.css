@@ -96,12 +96,20 @@ p {
 
 /* Navbar */
 #navbar { 
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content : space-between;
-  background-color: var(--color-black);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
+  transition: all var(--animation__duration) ease-in-out;
+}
+
+#navbar.navbar--dark{
+  background-color: black;
+  padding: 8px;
 }
 
 .navbar__menu{
@@ -140,8 +148,10 @@ p {
 
 /* Home */
 #home { 
-  background:url("imgs/homebackground.png") center/cover no-repeat;
+  /* background:url("imgs/homebackground.png") center/cover no-repeat; */
+  background-color: var(--color-black);
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
