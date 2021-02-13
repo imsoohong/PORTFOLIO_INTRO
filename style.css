@@ -105,10 +105,11 @@ p {
   color: var(--color-white);
   padding: 16px;
   transition: all var(--animation__duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark{
-  background-color: black;
+  background-color: var(--color-dark-grey);
   padding: 8px;
 }
 
