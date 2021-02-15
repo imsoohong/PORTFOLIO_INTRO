@@ -34,6 +34,7 @@
 /* Animation */
 --animation__duration: 300ms;
 }
+
 /* Universal tag */
 * { 
   box-sizing: border-box;
@@ -64,8 +65,8 @@ button{
   border: none;
   outline: none;
 }
-/* Typography */
 
+/* Typography */
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
@@ -109,7 +110,7 @@ p {
 }
 
 #navbar.navbar--dark{
-  background-color: var(--color-dark-grey);
+  background-color: orangered;
   padding: 8px;
 }
 
@@ -150,7 +151,7 @@ p {
 /* Home */
 #home { 
   /* background:url("imgs/homebackground.png") center/cover no-repeat; */
-  background-color: var(--color-black);
+  background-color: var(--color-orange);
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -164,12 +165,12 @@ p {
 }
 
 .home__title,
-.home__description{
+.home__description,
+.home__contact{
   color: var(--color-white);
 }
 
 .home__contact{
-  color: var(--color-white);
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
   margin: 24px;
@@ -380,8 +381,8 @@ p {
 }
 
 .project__description h3 { 
-  color: var(--color-white);
-}
+    color: var(--color-white);
+  }
 
 .project__description h3:after {
   content: '';
