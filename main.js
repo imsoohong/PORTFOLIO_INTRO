@@ -29,11 +29,11 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 }); 
 
-// Navbar toggle button for small screen 
-const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-navbarToggleBtn.addEventListener('click', () => {
-  navbarMenu.classList.toggle('open');
-});
+  // Navbar toggle button for small screen 
+  const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+  navbarToggleBtn.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+  });
 
 // Handle click on "Contact me " button on home
 const homeContactBtn = document.querySelector('.home__contact');
@@ -58,7 +58,7 @@ document.addEventListener('scroll', () => {
     arrowUp.classList.remove('visible');
   }
 });
-
+ 
 // Handle click on the " arrow up" button 
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
