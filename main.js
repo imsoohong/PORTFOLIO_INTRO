@@ -27,13 +27,13 @@ navbarMenu.addEventListener('click', (event) => {
 
   // console.log(event.target.dataset.link); // 링크가 있어야 클릭이 됨//
   scrollIntoView(link);
-}); 
+});
 
-  // Navbar toggle button for small screen 
-  const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
-  navbarToggleBtn.addEventListener('click', () => {
-    navbarMenu.classList.toggle('open');
-  });
+// Navbar toggle button for small screen 
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
+});
 
 // Handle click on "Contact me " button on home
 const homeContactBtn = document.querySelector('.home__contact');
@@ -58,7 +58,7 @@ document.addEventListener('scroll', () => {
     arrowUp.classList.remove('visible');
   }
 });
- 
+
 // Handle click on the " arrow up" button 
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
@@ -74,15 +74,19 @@ workBtnContainer.addEventListener('click', (e) => {
   if (filter == null) {
     return;
   }
-  console.log(filter);
-  projects.forEach((project) => {
-    console.log(project.dataset.type);
-    if (filter === '*' || filter === project.dataset.type) {
-      project.classList.remove('invisible');
-    } else {
-      project.classList.add('invisible');
-    }
-  });
+
+  projectContainer.classList.add('anim-out');
+  setTimeout(() => {
+    projects.forEach((project) => {
+      console.log(project.dataset.type);
+      if (filter === '*' || filter === project.dataset.type) {
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectContainer.classList.remove('anim-out');
+  }, 300);
 });
 
 function scrollIntoView(selector) {

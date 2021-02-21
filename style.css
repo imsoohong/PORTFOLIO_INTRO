@@ -342,6 +342,13 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation__duration) ease-out;
+}
+
+.work__projects.anim-out { 
+  opacity: 0.6;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project{
