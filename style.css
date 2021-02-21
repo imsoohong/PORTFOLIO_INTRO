@@ -214,11 +214,11 @@ p {
 }
 
 .major__icon i{
-  transition: all var(--animation-duration) ease;
+  transition: all var(--animation__duration) ease;
 }
 .major__icon:hover i {
-  color: var(--color-pink);
-  transform: rotate(-30deg);
+  color: var(--color-orange);
+  transform: rotate(-30deg) scale(1.1);
 }
 
 .major__title, .major__description{
