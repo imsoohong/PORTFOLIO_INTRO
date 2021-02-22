@@ -130,7 +130,6 @@ p {
   cursor: pointer;
   border-radius: var(--size-border-radius);
   border: 1px solid transparent;
-  border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item.active{
@@ -216,6 +215,7 @@ p {
 .major__icon i{
   transition: all var(--animation__duration) ease;
 }
+
 .major__icon:hover i {
   color: var(--color-orange);
   transform: rotate(-30deg) scale(1.1);
