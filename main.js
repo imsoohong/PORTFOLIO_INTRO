@@ -1,36 +1,38 @@
 'use strict'
 
-// Make navbar transparent when it is on th top
+/* Navbar */
+
+// navbar 빨간색으로 만들기 
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
-  // console.log(window.scrollY);
-  // console.log('navbarHeight: ${navbarHeight}');
+
   if (window.scrollY > navbarHeight) {
-    navbar.classList.add('navbar--dark');
+    navbar.classList.add('navbar--red');
   } else {
-    navbar.classList.remove('navbar--dark');
+    navbar.classList.remove('navbar--red');
   }
+
 });
 
-// Handle scrolling when tapping on the navbar menu
+// navbar메뉴를 누르면 각각의 페이지로 이동하게 하기
 const navbarMenu = document.querySelector('.navbar__menu');
+
 navbarMenu.addEventListener('click', (event) => {
+
   const target = event.target;
   const link = target.dataset.link;
   if (link == null) {
     return;
   }
 
-  // navbarMenu.classList.remove('open');
-
-  // console.log(event.target.dataset.link); // 링크가 있어야 클릭이 됨//
   scrollIntoView(link);
 });
 
-// Navbar toggle button for small screen 
+// 작은 화면에서의 navbar 토글 버튼 
 const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+
 navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
