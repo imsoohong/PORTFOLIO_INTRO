@@ -37,21 +37,20 @@ navbarToggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('open');
 });
 
-// Handle click on "Contact me " button on home
+// 연락하기 버튼누르면 내려가기
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
-//Make home slowly fade to transparent as the window scrolls down
+//스크롤 내리면 투명하게 하기
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-  // console.log(1 - window.scrollY / homeHeight);
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// Show "arrow up" button when scrolling down
+// 스크롤 내리면 arrow up 버튼 보이게 하기
 const arrowUp = document.querySelector('.arrow-up');
 document.addEventListener('scroll', () => {
   if (window.scrollY > homeHeight / 2) {
@@ -61,7 +60,7 @@ document.addEventListener('scroll', () => {
   }
 });
 
-// Handle click on the " arrow up" button 
+// arrow up 버튼 누르면 #home으로 가게 하기
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
 });
@@ -105,9 +104,7 @@ workBtnContainer.addEventListener('click', (e) => {
 const sectionIds = [
   '#home',
   '#about',
-  '#skills',
   '#work',
-  '#testimonials',
   '#contact'
 ];
 
