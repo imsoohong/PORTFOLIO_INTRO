@@ -183,7 +183,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 
-/* Section common */
+/* Section */
 .section { 
   text-align: center;
   padding: 50px;
@@ -191,7 +191,7 @@ p {
 }
 
 .section__container{
-  max-width: 1200px; /* 1000~1200이 제일 적당 */
+  max-width: 1200px;
   margin:auto;
 }
 
@@ -223,31 +223,9 @@ p {
   transform: rotate(-30deg) scale(1.1);
 }
 
-.major__title, .major__description{
+.major__title{
   color: var(--color-dark-grey);
   font-size: var(--font-small);
-}
-
-.job { 
-  display: flex;
-  align-items: center;
-}
-
-.job__description{
-  margin: 0 16px;
-  text-align: left;
-}
-
-.job__name, .job__period{
-  color: var(--color-light-grey);
-}
-
-.job__name { 
-  font-size: var(--font-small);
-}
-
-.job__period{
-  font-size: var(--font-micro);
 }
 
 /* Skill */
