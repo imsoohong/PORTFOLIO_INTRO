@@ -152,13 +152,13 @@ p {
 
 /* Home */
 #home { 
-  /* background:url("imgs/homebackground.png") center/cover no-repeat; */
   background-color: var(--color-orange);
   padding: 40px;
   padding-top: 120px;
   text-align: center;
 }
 
+/* 사진 */
 .home__avatar{
   width: 250px;
   height: 250px;
@@ -166,12 +166,14 @@ p {
   border: 2px solid var(--color-light-white);
 }
 
+/* 글자색 */
 .home__title,
 .home__description,
 .home__contact{
   color: var(--color-white);
 }
 
+/* 연락 버튼 */
 .home__contact{
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
