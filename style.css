@@ -244,9 +244,9 @@ p {
   color: var(--color-dark-grey);
   font-size: var(--font-small);
 }
+/* about 끝 */
 
-
-/* Work */
+/* Work 시작 */
 .work__categories{
   margin: 40px;
 }
@@ -268,7 +268,7 @@ p {
 .category__btn.selected .category__count,
 .category__btn:hover .category__count{
   opacity: 1;
-  top: 0;
+  top: 5px;
 }
 
 .category__count { 
@@ -286,6 +286,7 @@ p {
   transition: all var(--animation__duration) ease;
 }
 
+/* 프로젝트 이미지 */
 .work__projects{
   display: flex;
   flex-wrap: wrap;
@@ -354,7 +355,9 @@ p {
   margin-top: 8px;
   background-color: var(--color-dark-white);
 }
-/* Testimonial */
+/* project 끝 */
+
+/* Testimonial 시작 */
 #testimonials { 
   background-color: var(--color-light-white);
 }
