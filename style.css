@@ -196,6 +196,10 @@ p {
 }
 
 /* About */
+#about { 
+  border-bottom: 1px solid black;
+}
+
 .about__majors{
   display: flex;
   justify-content: space-between;
@@ -219,9 +223,20 @@ p {
   transition: all var(--animation__duration) ease;
 }
 
+.icon__html {
+  color: #E34F26;
+}
+
+.icon__css {
+  color: #1572B6;
+}
+
+.icon__js {
+  color: #F7DF1E; 
+}
+
 .major__icon:hover i {
-  color: var(--color-orange);
-  transform: rotate(-30deg) scale(1.1);
+  transform: scale(1.4);
 }
 
 /* 기술 이름 */
