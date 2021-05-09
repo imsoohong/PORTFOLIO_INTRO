@@ -63,6 +63,7 @@ document.addEventListener('scroll', () => {
 // arrow up 버튼 누르면 #home으로 가게 하기
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
+  console.log('작동됨');
 });
 
 // Projects
@@ -126,7 +127,7 @@ function selectNavItem(selected) {
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
-  selectNavItem(navItems[sectionsIds.indexOf(selector)]);
+  // selectNavItem(navItems[sectionsIds.indexOf(selector)]);
 };
 
 const observerOptions = {
